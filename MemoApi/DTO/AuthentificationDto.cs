@@ -1,4 +1,4 @@
-﻿namespace MemoApi.DTO
+﻿namespace Memo.Api.DTO
 {
     public class AuthentificationDto
     {

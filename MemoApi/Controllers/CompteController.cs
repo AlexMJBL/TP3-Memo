@@ -1,12 +1,43 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MemoApi.Controllers
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+namespace Memo.Api.Controllers
 {
-    public class CompteController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class CompteController : ControllerBase
     {
-        public IActionResult Index()
+        // GET: api/<CompteController>
+        [HttpGet]
+        public IEnumerable<string> Get()
         {
-            return View();
+            return new string[] { "value1", "value2" };
+        }
+
+        // GET api/<CompteController>/5
+        [HttpGet("{id}")]
+        public string Get(int id)
+        {
+            return "value";
+        }
+
+        // POST api/<CompteController>
+        [HttpPost]
+        public void Post([FromBody] string value)
+        {
+        }
+
+        // PUT api/<CompteController>/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] string value)
+        {
+        }
+
+        // DELETE api/<CompteController>/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
         }
     }
 }

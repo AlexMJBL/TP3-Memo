@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36401.2 d17.14
+VisualStudioVersion = 17.14.36401.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoApi", "MemoApi\MemoApi.csproj", "{2A0E5C8F-B33C-44AA-8A60-F5CA31335E00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memo.Api", "MemoApi\Memo.Api.csproj", "{2A0E5C8F-B33C-44AA-8A60-F5CA31335E00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memo.ApplicationCore", "Memo.ApplicationCore\Memo.ApplicationCore.csproj", "{BC01CEC4-266F-4C3A-9671-A10284FD001C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memos.Infrastructure", "Memo.Infrastructure\Memos.Infrastructure.csproj", "{F2870FAF-52C4-4CDC-915B-B2B871FDDC33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{2A0E5C8F-B33C-44AA-8A60-F5CA31335E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A0E5C8F-B33C-44AA-8A60-F5CA31335E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A0E5C8F-B33C-44AA-8A60-F5CA31335E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC01CEC4-266F-4C3A-9671-A10284FD001C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC01CEC4-266F-4C3A-9671-A10284FD001C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC01CEC4-266F-4C3A-9671-A10284FD001C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC01CEC4-266F-4C3A-9671-A10284FD001C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2870FAF-52C4-4CDC-915B-B2B871FDDC33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2870FAF-52C4-4CDC-915B-B2B871FDDC33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2870FAF-52C4-4CDC-915B-B2B871FDDC33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2870FAF-52C4-4CDC-915B-B2B871FDDC33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

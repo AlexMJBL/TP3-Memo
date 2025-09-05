@@ -1,6 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace MemoApi.Models
+namespace Memo.ApplicationCore.Entities
 {
     public class Compte
     {
@@ -17,7 +22,5 @@ namespace MemoApi.Models
         public DateTime? DateDerniereConnexion { get; set; }
 
         public ICollection<Memo> Memos { get; set; } = new List<Memo>();
-
-
     }
 }

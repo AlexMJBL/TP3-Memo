@@ -1,6 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace MemoApi.Models
+namespace Memo.ApplicationCore.Entities
 {
     public class Memo
     {
@@ -20,7 +25,5 @@ namespace MemoApi.Models
         public string IdCompte { get; set; }
 
         public Compte Compte { get; set; }
-
-
     }
 }

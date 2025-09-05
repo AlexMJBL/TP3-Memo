@@ -1,7 +1,12 @@
-﻿using MemoApi.Models;
+﻿using Memo.ApplicationCore.Entities;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace MemoApi.Data
+namespace Memos.Infrastructure.Data
 {
     public class MemoContext : DbContext
     {
@@ -17,7 +22,7 @@ namespace MemoApi.Data
             // Relation Compte <-> Memo
             modelBuilder.Entity<Memo>()
                         .HasOne(m => m.Compte)
-                        .WithMany(c => c.Memos) 
+                        .WithMany(c => c.Memos)
                         .HasForeignKey(m => m.IdCompte)
                         .OnDelete(DeleteBehavior.Cascade);
 
